@@ -13,7 +13,7 @@ def on_message(client, userdata, message):
 
 
 client = mqtt.Client("DSO algorithm")
-client.username_pw_set("username")
+client.username_pw_set("username", "password")
 client.on_connect = on_connect
 client.on_message = on_message
 
